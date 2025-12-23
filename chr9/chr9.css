@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: #deb912;
+    color: #333;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  height: 100vh;
+
+  
+}
+.container{
+    text-align: center;}}
+.progress-container{
+    position: relative; 
+    width: 500px;
+    display: flex;
+    justify-content: space-between;
+}
+.progress-Bar-back{
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background-color: lightgray;
+    border: none;
+    z-index: -1;
+    margin: 0;
+    top:50%;
+      transform: translateY(-50%);
+}
+.progress-Bar-front{
+    position: absolute;
+    width: 0%;
+    height: 4px;
+    background-color: #4caf50;
+    border: none;
+    z-index: -1;
+    margin: 0;
+    top:50%;
+    transform: translateY(-50%);
+  transition: 0.4s linear width;
+}
